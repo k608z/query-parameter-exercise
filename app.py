@@ -38,8 +38,7 @@ def search():
     sort_by = request.args.get('sort', 'Standardsortierung')
     return f"Suche nach: {query}, Sortierung: {sort_by}"
 
-
-@app.route('/produkte')
+@app.route("/produkte")
 def produkte():
     kategorie = request.args.get('kategorie')
 
